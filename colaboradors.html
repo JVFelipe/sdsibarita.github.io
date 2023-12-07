@@ -8,51 +8,41 @@
          @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
          
 
-         #logo {
+          #logo {
             float: left;
-
         }
 
-         body h1 {
+        body h1 {
             font-family: 'Nunito sans', sans-serif;
             color: rgb(111, 160, 37);
             text-align: center;
-            font-size: 50px;
-         }
+            font-size: 36px;
+            margin-top: 10px;
+        }
 
-         body {
+        body {
             margin: 0;
             padding: 20px;
             gap: 20px;
-            background:url(imatges/Fondo.jpg);
+            background: url(imatges/Fondo.jpg);
             background-size: cover;
         }
 
-        .img1 {
-
-            width: 1700px;
-            height: 400px;
-            text-align: center;
-        }
-
+        .img1,
         .img2 {
-            
-            width: 1700px;
-            height: 400px;
-            text-align: center;
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
 
-        }
-        div img{
-            width: 400px; 
-            height: 300px;
-            margin-top: 100px;
-            padding: 10px;
-        }
-        img {
-     max-width: 100%;
-     height: auto;
-    
+        .img1 img,
+        .img2 img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 10px;
         }
       
     </style>
