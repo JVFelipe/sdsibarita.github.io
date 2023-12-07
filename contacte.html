@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+  <head>
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1, width=device-width, initial-scale=1" charset="UTF-8">
+    <title> Contacto </title>
+
+
+   <style>
+     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+    
+     body{
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    background:url(imatges/Fondo.jpg);
+    background-size: cover;
+    }
+
+   body h1 {
+        color: rgb(111, 160, 37);
+        text-align: center;
+    }
+
+    input[type=submit] {
+    background-color: greenyellow;
+    border:0 none;
+    cursor:pointer;
+    font-size: 18px
+
+}
+
+    input[type=submit]:hover {
+background-color: rgb(111, 160, 37);
+
+}
+
+.mensaje {
+    float: left;
+    padding-left: 100px;
+
+}
+.ayuda {
+    float:right;
+    padding-right: 350px;
+}
+.header {
+    float:left;
+}
+img {
+     max-width: 100%;
+     height: auto;
+    
+   }
+
+</style>
+ </head>
+<body>
+<div class="header">
+<a href="index.html">
+<img src="imatges/logo.png" height="200" width="250" alt="logoclub">
+</a>
+</div>
+
+<div class="contenidor">
+<form action="index.php" method="post" enctype="multipart/form-data">
+<h1> Contacta con la SD Sibarita </h1>
+
+<div class="mensaje">
+<label for="texto"> ¿Qué necesita? </label> <br>
+<br>
+<textarea id="texto" name="texto" cols="70" rows="20"></textarea> <br>
+<br>
+
+<label for="email"> Introduce un correo electrónico </label> <br> 
+<input id="email" type="email" name="correoelectronico"> <br>
+<br>
+
+<input type="submit" name="enviar" value="Enviar">
+</div>
+<div class="ayuda">
+<h2> Si necesita ayuda adicional </h2>
+<h3> Correo electrónico: </h3> <p> contaco@sdsibarita.com </p>
+<h3> Teléfono: </h3> <p> 902 324 500</p>
+<h3> Oficinas: </h3> <p> Av. Jorge Manrique s/n 08302, Sibarita</p>
+</div>
+</div>
+</form>
+</body>
+</html>
